@@ -90,7 +90,6 @@ class PostsController < Sinatra::Base
 
   end
 
-
   get '/:id/edit'  do
     id = params[:id].to_i
     @post = $posts[id]
